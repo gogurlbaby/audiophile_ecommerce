@@ -1,6 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BsCart3 } from "react-icons/bs"
 import { useState } from "react"
+import logo from "../../resources/assets/shared/desktop/logo.svg"
 
 function NavBar() {
 const [toggle, setToggle] = useState(false)  
@@ -11,7 +12,9 @@ const [toggle, setToggle] = useState(false)
         <GiHamburgerMenu size={20} className="lg:hidden block text-[#FFF]" onClick={() => setToggle(!toggle)} />
       </div>
       <div className="lg:flex lg:justify-around">
-      <a href="/" className="text-[#FFF] pointer"><p className="font-black tracking-wide text-base">audiophile</p></a>
+      <a href="/" className="no-underline pointer">
+        <img src={logo} alt="logo" />
+      </a>
         {
           toggle ?
           <ul className="lg:hidden sm:block uppercase">

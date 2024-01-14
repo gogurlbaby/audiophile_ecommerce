@@ -1,9 +1,12 @@
 import { FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
+import footer_logo from "../../resources/assets/shared/desktop/logo.svg"
 function Footer() {
   return (
     <div className="lg:pt-20 lg:px-40 md:pt-14 md:px-10 bg-[#101010] w-full h-full pt-12 pb-10 px-4">
       <div className="lg:flex lg:justify-between lg:items-center">
-      <p className="md:text-left text-[#FFF] text-center font-black tracking-widest text-lg mb-12">audiophile</p>
+       <a href="/" className="md:justify-start md:items-start no-underline pointer flex justify-center items-center">
+        <img src={footer_logo} alt="footer-logo" />
+        </a>
         <ul className="md:flex md:gap-8 md:text-left uppercase text-center mb-12">
           <li className="lg:text-[0.875rem] list-none text-base font-bold tracking-tighter pointer leading-6 mt-6">
             <a href="/" className="text-[#FFF] hover:text-[#D87D4A] no-underline">Home</a>
