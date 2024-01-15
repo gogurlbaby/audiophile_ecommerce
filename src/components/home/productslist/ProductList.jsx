@@ -1,10 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { SeeProductButton, ShopButton } from "../../Button";
 import ZX9_Speaker from "/shared/desktop/image-category-thumbnail-speakers.png"
 
 function ProductList() {
   const [products, setProducts] = useState([]);
-  const categoriesToDisplay = ["headphones", "speakers", "earphones"];
+  
+  const categoriesToDisplay = useMemo(
+    () => ["headphones", "speakers", "earphones"],
+    []
+  );
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +29,7 @@ function ProductList() {
     };
 
     fetchData();
-  }, []);
+  }, [categoriesToDisplay]);
 
   console.log("Products:", products);
 
