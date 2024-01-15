@@ -1,5 +1,6 @@
 import { FaFacebookSquare, FaTwitter, FaInstagram } from "react-icons/fa";
-import footer_logo from "../../resources/assets/shared/desktop/logo.svg"
+import footer_logo from "/shared/desktop/logo.svg"
+
 function Footer() {
   return (
     <div className="lg:pt-20 lg:px-40 md:pt-14 md:px-10 bg-[#101010] w-full h-full pt-12 pb-10 px-4">

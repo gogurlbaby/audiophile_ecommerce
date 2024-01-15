@@ -1,4 +1,5 @@
-import "./hero.css"
+import { ProductButton } from "../../Button";
+import "../hero-components/hero.css";
 
 function Hero() {
   return (
@@ -11,13 +12,7 @@ function Hero() {
        Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
        </p>
      </div>
-     <div className="lg:justify-start lg:items-start flex justify-center items-center">
-     <button 
-      type="button" 
-      className="bg-[#D87D4A] text-[#FFF] border border-solid border-[#D87D4A] px-8 py-4 text-sm font-bold tracking-[1px]">
-      SEE PRODUCT
-     </button>
-     </div>
+       <ProductButton />
     </div>
   )
 }

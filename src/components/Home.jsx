@@ -1,9 +1,11 @@
-import Hero from "./home/Hero"
+import ProductList from "./home/productslist/ProductList"
+import Hero from "./home/hero-components/Hero"
 
 function Home() {
   return (
     <>
      <Hero />
+     <ProductList />
     </>
   )
 }

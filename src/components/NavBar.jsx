@@ -1,7 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BsCart3 } from "react-icons/bs"
 import { useState } from "react"
-import logo from "../../resources/assets/shared/desktop/logo.svg"
+import logo from "/shared/desktop/logo.svg"
 
 function NavBar() {
 const [toggle, setToggle] = useState(false)  
