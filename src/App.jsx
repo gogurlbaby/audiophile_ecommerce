@@ -1,16 +1,16 @@
-import Footer from "./components/Footer"
-import NavBar from "./components/NavBar"
-import Home from "./components/Home"
+import { CartContextProvider } from "./context/cartContext";
+import Major from "./components/app/Major";
+import Header from "./components/app/Header";
+import Footer from "./components/app/Footer";
 
 function App() {
-
   return (
-    <div className="">
-      <NavBar />
-      <Home />
+    <CartContextProvider>
+      <Header />
+      <Major />
       <Footer />
-    </div>
-  )
+    </CartContextProvider>
+  );
 }
 
-export default App
+export default App;
